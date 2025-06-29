@@ -29,6 +29,7 @@ passport.use(
             clientID: keys.googleClientID,
             clientSecret: keys.googleClientSecret,
             callbackURL: '/auth/google/callback', // The URL to which Google will redirect after authentication.
+            proxy: true
         }, 
         //第二个参数：回调函数。处理从 Google 返回的用户信息
         (accessToken, refreshToken, profile, done) => { 
