@@ -8,7 +8,7 @@ const passport = require('passport');
 
 const keys = require('./config/keys'); // Import the keys module. This module contains configuration keys, such as database connection strings and API keys.
 
-require('./models/user'); // Import the user model. Ensure the user model is loaded and registered with Mongoose.
+require('./models/User'); // Import the user model. Ensure the user model is loaded and registered with Mongoose.
 
 require('./services/passport'); // Ensure configuration in `passport.js` can be executed and run by server
 // 它没有赋值给一个变量，这通常意味着passport.js文件在被导入时会立即执行一些初始化代码
